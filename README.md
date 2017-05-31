@@ -110,3 +110,9 @@ $ rpm -q --provides packagename
 #### for rpm file
 $ rpm -qp --provides /path-to/package.rpm
 ```
+
+###### Extract RPM
+Command will extract the content of the rpm in current dir.
+```sh
+rpm2cpio package.rpm | cpio -idmv
+```
